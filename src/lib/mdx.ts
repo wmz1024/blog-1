@@ -19,11 +19,12 @@ import singleSpaces from "typographic-single-spaces";
 import trademark from "typographic-trademark";
 import imageSize from "rehype-img-size";
 import remarkUnwrapImages from "remark-unwrap-images";
-import mdxPrism from "mdx-prism";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import markdown from "remark-parse";
 import remarkGfm from "remark-gfm";
+import rehypeHighlight from 'rehype-highlight'
+import remarkToc from 'remark-toc'
 
 const serializePost = async (
   content: string
@@ -34,8 +35,9 @@ const serializePost = async (
         markdown,
         remarkUnwrapImages,
         remarkCodeTitles,
-        [remarkGfm],
-        [remarkMath],
+        remarkGfm,
+        remarkMath,
+        remarkToc,
         [remarkCapitalize],
         [
           remarkTextr,
@@ -58,10 +60,10 @@ const serializePost = async (
         ],
       ],
       rehypePlugins: [
-        mdxPrism,
+        rehypeHighlight,
         rehypeSlug,
         rehypeAutolinkHeadings,
-        [rehypeKatex],
+        rehypeKatex,
         [imageSize, { dir: "public" }],
       ],
     },
