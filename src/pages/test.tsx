@@ -2,7 +2,6 @@ import React, { ReactNode, useState } from "react";
 import { GetStaticProps } from "next";
 import { getPostsFrontMatter, PartialFrontMatter } from "@/lib/get-posts";
 import Layout from "@/components/layouts";
-import { generateMainFeeds } from "@/lib/feeds";
 import Nav from "@/components/Nav";
 import Link from "next/link";
 import Footer from "@/components/Footer";
@@ -13,7 +12,7 @@ type HomeProps = {
   allPosts: PartialFrontMatter[];
 };
 
-const Home = ({ Posts }: HomeProps): ReactNode => {
+const Test = ({ Posts }: HomeProps): ReactNode => {
   const [searchValue, setSearchValue] = useState("");
   const filteredBlogPosts = Posts.filter((frontMatter) =>
     frontMatter.title.toLowerCase().includes(searchValue.toLowerCase())
@@ -48,4 +47,4 @@ export const getStaticProps: GetStaticProps = () => {
   };
 };
 
-export default Home;
+export default Test;
