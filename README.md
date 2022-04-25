@@ -46,4 +46,6 @@ getPostsFrontMatter()中填入数字，可以限制获取文章的数目
 
 ## 更新日志
 
-[v1.3.0] 支持了删除线，注释，链接转超链接。支持搜索功能，源代码请见 _src/pages/test.tsx_，参见[Demo](https://blog.wll.moe/test)
+[v1.3.0] 支持了删除线，注释，链接转超链接。支持搜索功能，源代码请见 _src/pages/search.tsx_，参见[Demo](https://blog.wll.moe/search)
+
+[v1.3.1] 修复bugs
