@@ -1,4 +1,4 @@
-<center> Welcome to NextBlog! </center>
+<center><h1> Welcome to NextBlog! <h2></center>
 
 ## About Project
 
