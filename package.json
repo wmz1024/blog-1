@@ -1,0 +1,79 @@
+{
+  "name": "willie-blog",
+  "version": "1.2.0",
+  "description": "A nextblog suit for DIY by yourself",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "prettier": "prettier --write .",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuwillie/nextblog.git"
+  },
+  "keywords": [
+    "blog",
+    "NextJS",
+    "React"
+  ],
+  "author": "willie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xuwillie/nextblog/issues"
+  },
+  "homepage": "https://github.com/xuwillie/nextblog#readme",
+  "dependencies": {
+    "add": "latest",
+    "date-fns": "latets",
+    "feed": "latest",
+    "gray-matter": "latest",
+    "mdx-prism": "latest",
+    "next": "^12.1.5",
+    "next-mdx-remote": "latest",
+    "next-remote-watch": "latest",
+    "next-sitemap": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "reading-time": "latest",
+    "rehype": "latest",
+    "rehype-autolink-headings": "latest",
+    "rehype-img-size": "latest",
+    "rehype-katex": "latest",
+    "rehype-slug": "latest",
+    "remark-capitalize": "latest",
+    "remark-code-titles": "latest",
+    "remark-math": "latest",
+    "remark-parse": "latest",
+    "remark-textr": "latest",
+    "remark-unwrap-images": "latest",
+    "title": "latest",
+    "typographic-apostrophes": "latest",
+    "typographic-apostrophes-for-possessive-plurals": "latest",
+    "typographic-arrows": "latest",
+    "typographic-copyright": "latest",
+    "typographic-ellipses": "latest",
+    "typographic-em-dashes": "latest",
+    "typographic-en-dashes": "latest",
+    "typographic-math-symbols": "latest",
+    "typographic-quotes": "latest",
+    "typographic-registered-trademark": "latest",
+    "typographic-single-spaces": "latest",
+    "typographic-trademark": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "12.1.5",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-react": "latest",
+    "prettier": "latest",
+    "string-strip-html": "latest",
+    "typescript": "latest"
+  }
+}
