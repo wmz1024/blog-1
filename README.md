@@ -59,6 +59,8 @@ npm run dev
 npm run build
 ```
 
+### 可以在[vercel](https://vercel.com)云部署
+
 ## 使用提示
 
 - Markdown 里只有四种媒体信息: title, description, tags, date。tags 里的内容要用[]包住。
