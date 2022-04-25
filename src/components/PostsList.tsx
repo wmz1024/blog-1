@@ -47,7 +47,7 @@ const PostsList = ({ posts }: PostsListProps): ReactElement => {
   return (
     <>
       {posts.map((frontMatter) => {
-        return <Post key={frontMatter.slug} frontMatter={frontMatter} />;
+        return <Post key={frontMatter.title} frontMatter={frontMatter} />;
       })}
     </>
   );

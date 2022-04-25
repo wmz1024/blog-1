@@ -23,7 +23,7 @@ import mdxPrism from "mdx-prism";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import markdown from "remark-parse";
-import remarkGfm from 'remark-gfm'
+import remarkGfm from "remark-gfm";
 
 const serializePost = async (
   content: string

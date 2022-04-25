@@ -73,7 +73,7 @@
     "eslint-config-next": "12.1.5",
     "eslint-config-prettier": "latest",
     "eslint-plugin-react": "latest",
-    "prettier": "latest",
+    "prettier": "^2.6.2",
     "string-strip-html": "latest",
     "typescript": "latest"
   }
