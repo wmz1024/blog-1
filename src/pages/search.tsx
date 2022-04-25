@@ -8,11 +8,11 @@ import Footer from "@/components/Footer";
 import dynamic from "next/dynamic";
 const PostsList = dynamic(() => import("@/components/PostsList"));
 
-type HomeProps = {
-  allPosts: PartialFrontMatter[];
+type SearchProps = {
+  Posts: PartialFrontMatter[];
 };
 
-const Test = ({ Posts }: HomeProps): ReactNode => {
+const Search = ({ Posts }: SearchProps): ReactNode => {
   const [searchValue, setSearchValue] = useState("");
   const filteredBlogPosts = Posts.filter((frontMatter) =>
     frontMatter.title.toLowerCase().includes(searchValue.toLowerCase())
@@ -38,7 +38,6 @@ const Test = ({ Posts }: HomeProps): ReactNode => {
 };
 
 export const getStaticProps: GetStaticProps = () => {
-  generateMainFeeds();
   const Posts = getPostsFrontMatter();
   return {
     props: {
@@ -47,4 +46,4 @@ export const getStaticProps: GetStaticProps = () => {
   };
 };
 
-export default Test;
+export default Search;
